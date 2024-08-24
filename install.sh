@@ -347,6 +347,7 @@ read -p "Input y/n " y
 read -p "Input y/n " y
 
 bash <(curl -s https://pterodactyl-installer.se) <<EOF
+6
 $y
 $y
 $y
