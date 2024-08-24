@@ -341,17 +341,17 @@ uninstall_panel() {
   echo -e "${BLUE}[+]                    UNINSTALL PANEL                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-read -p "UninstallPanel y/n " y
-read -p "UninstallWings y/n " y
-read -p "Input y/n " y
-read -p "Input y/n " y
+read -p "UninstallPanel y/n " ypanel
+read -p "UninstallWings y/n " ywings
+read -p "Input y/n " y1
+read -p "Input y/n " y2
 
 bash <(curl -s https://pterodactyl-installer.se) <<EOF
 6
-y
-y
-y
-y
+ypanel
+ywings
+y1
+y2
 EOF
 
 
