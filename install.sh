@@ -341,13 +341,16 @@ uninstall_panel() {
   echo -e "${BLUE}[+]                    UNINSTALL PANEL                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-
+read -p "Input y/n " y
+read -p "Input y/n " y
+read -p "Input y/n " y
+read -p "Input y/n " y
 
 bash <(curl -s https://pterodactyl-installer.se) <<EOF
-y
-y
-y
-y
+$y
+$y
+$y
+$y
 EOF
 
 
