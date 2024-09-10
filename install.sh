@@ -443,6 +443,60 @@ EOF
   
   exit 0
 }
+auto_installer() {
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]            AUTO INSTALL PANEL + WINGS           [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+read -p "Masukkan Nama " nama
+read -p "Masukkan Password " pw
+read -p "Masukkan Subdomain " subdo
+read -p "Masukkan NodeSubdomain " nodesubdo
+
+bash <(curl -s https://pterodactyl-installer.se) <<EOF
+2
+\n
+\n
+pw
+Asia/Jakarta
+admin@gmail.com
+admin@gmail.com
+nama
+nama
+nama
+pw
+subdo
+y
+y
+y
+y
+yes
+A
+y
+y
+y
+subdo
+y
+user
+pw
+y
+nodesubdo
+y
+admin@gmail.com
+y
+EOF
+
+
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  AUTO INSTALL SUKSE             [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  sleep 2
+  
+  exit 0
+}
 # Main script
 display_welcome
 install_jq
@@ -477,6 +531,7 @@ while true; do
   echo "6. Stellar Theme"
   echo "7. Hack Back Panel"
   echo "8. Ubah Pw Vps"
+  echo "9. Auto Install Panel"
   echo "x. Exit"
   echo -e "Masukkan pilihan 1/2/x:"
   read -r MENU_CHOICE
@@ -506,6 +561,9 @@ while true; do
       ;;
       8)
       ubahpw_vps
+      ;;
+      9)
+      auto_installer
       ;;
     x)
       echo "Keluar dari skrip."
