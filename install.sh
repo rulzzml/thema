@@ -17,8 +17,8 @@ display_welcome() {
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
-  echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
-  echo -e "dilarang keras untuk memperjual belikan."
+  echo -e "Script Ini Dijual Dengan Harga 7k,"
+  echo -e "dilarang keras untuk membagikannya secara gratis."
   echo -e ""
   echo -e "𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 :"
   echo -e "@RulzzHosting"
@@ -68,7 +68,7 @@ check_token() {
     echo -e "${GREEN}Buy dulu Gih Ke Rulzz Hosting${NC}"
     echo -e "${YELLOW}TELEGRAM : @RulzzHosting${NC}"
     echo -e "${YELLOW}WHATSAPP : 62882008927892${NC}"
-    echo -e "${YELLOW}HARGA TOKEN : 5K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
+    echo -e "${YELLOW}HARGA TOKEN : 7K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
     echo -e "${YELLOW}©Rulzz Hosting${NC}"
     exit 1
   fi
@@ -512,9 +512,9 @@ while true; do
   echo -e "${RED}',gg       ,ggg.      'ggg:                               ${NC}"
   echo -e "${RED}'ggg      ,gg'''  .    ggg       Auto Installer Fadhost   ${NC}"
   echo -e "${RED}gggg      gg     ,     ggg      ------------------------  ${NC}"
-  echo -e "${RED}ggg:     gg.     -   ,ggg       • Telegram : @RulzzHosting      ${NC}"
-  echo -e "${RED} ggg:     ggg._    _,ggg        • Creadit  : RULZZ HOSTONG ${NC}"
-  echo -e "${RED} ggg.    '.'''ggggggp           • Support by RulzzHosting  ${NC}"
+  echo -e "${RED}ggg:     gg.     -   ,ggg      • Telegram : @RulzzHosting ${NC}"
+  echo -e "${RED} ggg:     ggg._    _,ggg       • Creadit  : RULZZ HOSTONG ${NC}"
+  echo -e "${RED} ggg.    '.'''ggggggp          • Support by RulzzHosting  ${NC}"
   echo -e "${RED}  'ggg    '-.__                                           ${NC}"
   echo -e "${RED}    ggg                                                   ${NC}"
   echo -e "${RED}      ggg                                                 ${NC}"
@@ -534,6 +534,7 @@ while true; do
   echo "9. Auto Install Panel"
   echo "x. Exit"
   echo -e "Masukkan pilihan 1/2/x:"
+  echo -e "Bash Install Lengkap By Rulzz Hosting"
   read -r MENU_CHOICE
   clear
 
@@ -566,7 +567,7 @@ while true; do
       auto_installer
       ;;
     x)
-      echo "Keluar dari skrip."
+      echo "Berhasil Keluar dari skrip."
       exit 0
       ;;
     *)
